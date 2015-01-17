@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F1057451925EA59005A98D4 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057411925EA59005A98D4 /* CCLocalMaximum.m */; };
-		7F1057461925EA59005A98D4 /* CCColorCube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057431925EA59005A98D4 /* CCColorCube.mm */; };
+		6EF81DD01A6B05F600D58682 /* ColorCube.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF81DCF1A6B05F600D58682 /* ColorCube.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EF81DE21A6B05F600D58682 /* ColorCube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF81DCB1A6B05F600D58682 /* ColorCube.framework */; };
+		6EF81DE31A6B05F600D58682 /* ColorCube.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF81DCB1A6B05F600D58682 /* ColorCube.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EF81DEB1A6B065E00D58682 /* CCColorCube.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1057441925EA59005A98D4 /* CCColorCube.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EF81DEC1A6B066400D58682 /* CCColorCube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057431925EA59005A98D4 /* CCColorCube.mm */; };
+		6EF81DED1A6B067200D58682 /* CCLocalMaximum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1057421925EA59005A98D4 /* CCLocalMaximum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EF81DEE1A6B067900D58682 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057411925EA59005A98D4 /* CCLocalMaximum.m */; };
+		6EF81DEF1A6B088B00D58682 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63E192504D3009C124F /* UIKit.framework */; };
+		6EF81DF01A6B08A000D58682 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63C192504D3009C124F /* CoreGraphics.framework */; };
 		7F46E8D61925EA8D003C595F /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8CE1925EA8D003C595F /* CCViewController.m */; };
 		7F46E8D71925EA8D003C595F /* CCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D01925EA8D003C595F /* CCTableViewCell.m */; };
 		7F46E8D81925EA8D003C595F /* CCImageColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D21925EA8D003C595F /* CCImageColors.m */; };
@@ -29,24 +36,38 @@
 		7F98C645192504D3009C124F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F98C643192504D3009C124F /* InfoPlist.strings */; };
 		7F98C647192504D3009C124F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C646192504D3009C124F /* main.m */; };
 		7F98C653192504D3009C124F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F98C652192504D3009C124F /* Images.xcassets */; };
-		7F98C65A192504D3009C124F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C659192504D3009C124F /* XCTest.framework */; };
-		7F98C65B192504D3009C124F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63A192504D3009C124F /* Foundation.framework */; };
-		7F98C65C192504D3009C124F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63E192504D3009C124F /* UIKit.framework */; };
-		7F98C664192504D3009C124F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F98C662192504D3009C124F /* InfoPlist.strings */; };
-		7F98C666192504D3009C124F /* ColorCubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C665192504D3009C124F /* ColorCubeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7F98C65D192504D3009C124F /* PBXContainerItemProxy */ = {
+		6EF81DE01A6B05F600D58682 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F98C62F192504D3009C124F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7F98C636192504D3009C124F;
+			remoteGlobalIDString = 6EF81DCA1A6B05F600D58682;
 			remoteInfo = ColorCube;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6EF81DE71A6B05F700D58682 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6EF81DE31A6B05F600D58682 /* ColorCube.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6EF81DCB1A6B05F600D58682 /* ColorCube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorCube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF81DCE1A6B05F600D58682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF81DCF1A6B05F600D58682 /* ColorCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCube.h; sourceTree = "<group>"; };
+		6EF81DDD1A6B05F600D58682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF81DDE1A6B05F600D58682 /* ColorCubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCubeTests.m; sourceTree = "<group>"; };
 		7F1057411925EA59005A98D4 /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalMaximum.m; path = ColorCube/CCLocalMaximum.m; sourceTree = "<group>"; };
 		7F1057421925EA59005A98D4 /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalMaximum.h; path = ColorCube/CCLocalMaximum.h; sourceTree = "<group>"; };
 		7F1057431925EA59005A98D4 /* CCColorCube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCColorCube.mm; path = ColorCube/CCColorCube.mm; sourceTree = "<group>"; };
@@ -69,7 +90,7 @@
 		7F46E8E11925F21C003C595F /* glotze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glotze.jpg; sourceTree = "<group>"; };
 		7F46E8E21925F21C003C595F /* club.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = club.jpg; sourceTree = "<group>"; };
 		7F46E8E31925F21C003C595F /* berlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = berlin.jpg; sourceTree = "<group>"; };
-		7F98C637192504D3009C124F /* ColorCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F98C637192504D3009C124F /* ColorCubeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCubeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F98C63A192504D3009C124F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F98C63C192504D3009C124F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7F98C63E192504D3009C124F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -78,37 +99,74 @@
 		7F98C646192504D3009C124F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F98C648192504D3009C124F /* ColorCube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorCube-Prefix.pch"; sourceTree = "<group>"; };
 		7F98C652192504D3009C124F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7F98C658192504D3009C124F /* ColorCubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorCubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F98C659192504D3009C124F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7F98C661192504D3009C124F /* ColorCubeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorCubeTests-Info.plist"; sourceTree = "<group>"; };
 		7F98C663192504D3009C124F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7F98C665192504D3009C124F /* ColorCubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCubeTests.m; sourceTree = "<group>"; };
+		7F98C665192504D3009C124F /* ColorCubeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCubeDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6EF81DC71A6B05F600D58682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF81DF01A6B08A000D58682 /* CoreGraphics.framework in Frameworks */,
+				6EF81DEF1A6B088B00D58682 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F98C634192504D3009C124F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F98C63D192504D3009C124F /* CoreGraphics.framework in Frameworks */,
+				6EF81DE21A6B05F600D58682 /* ColorCube.framework in Frameworks */,
 				7F98C63F192504D3009C124F /* UIKit.framework in Frameworks */,
 				7F98C63B192504D3009C124F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F98C655192504D3009C124F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F98C65A192504D3009C124F /* XCTest.framework in Frameworks */,
-				7F98C65C192504D3009C124F /* UIKit.framework in Frameworks */,
-				7F98C65B192504D3009C124F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EF81DCC1A6B05F600D58682 /* ColorCube */ = {
+			isa = PBXGroup;
+			children = (
+				6EF81DCF1A6B05F600D58682 /* ColorCube.h */,
+				7F1057441925EA59005A98D4 /* CCColorCube.h */,
+				7F1057431925EA59005A98D4 /* CCColorCube.mm */,
+				7F1057421925EA59005A98D4 /* CCLocalMaximum.h */,
+				7F1057411925EA59005A98D4 /* CCLocalMaximum.m */,
+				6EF81DCD1A6B05F600D58682 /* Supporting Files */,
+			);
+			path = ColorCube;
+			sourceTree = "<group>";
+		};
+		6EF81DCD1A6B05F600D58682 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EF81DCE1A6B05F600D58682 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EF81DDB1A6B05F600D58682 /* ColorCubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EF81DDE1A6B05F600D58682 /* ColorCubeTests.m */,
+				6EF81DDC1A6B05F600D58682 /* Supporting Files */,
+			);
+			path = ColorCubeTests;
+			sourceTree = "<group>";
+		};
+		6EF81DDC1A6B05F600D58682 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EF81DDD1A6B05F600D58682 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7F186AA51925134100E4F320 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,24 +184,13 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		7F6408F31925E94000BA4A75 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				7F46E8D31925EA8D003C595F /* CCImageColors.h */,
-				7F46E8D21925EA8D003C595F /* CCImageColors.m */,
-				7F46E8D11925EA8D003C595F /* CCTableViewCell.h */,
-				7F46E8D01925EA8D003C595F /* CCTableViewCell.m */,
-				7F46E8CF1925EA8D003C595F /* CCViewController.h */,
-				7F46E8CE1925EA8D003C595F /* CCViewController.m */,
-			);
-			name = Demo;
-			sourceTree = "<group>";
-		};
 		7F98C62E192504D3009C124F = {
 			isa = PBXGroup;
 			children = (
-				7F98C640192504D3009C124F /* ColorCube */,
-				7F98C65F192504D3009C124F /* ColorCubeTests */,
+				7F98C640192504D3009C124F /* ColorCubeDemo */,
+				7F98C65F192504D3009C124F /* ColorCubeDemoTests */,
+				6EF81DCC1A6B05F600D58682 /* ColorCube */,
+				6EF81DDB1A6B05F600D58682 /* ColorCubeTests */,
 				7F98C639192504D3009C124F /* Frameworks */,
 				7F98C638192504D3009C124F /* Products */,
 			);
@@ -152,8 +199,8 @@
 		7F98C638192504D3009C124F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F98C637192504D3009C124F /* ColorCube.app */,
-				7F98C658192504D3009C124F /* ColorCubeTests.xctest */,
+				7F98C637192504D3009C124F /* ColorCubeDemo.app */,
+				6EF81DCB1A6B05F600D58682 /* ColorCube.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,15 +216,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7F98C640192504D3009C124F /* ColorCube */ = {
+		7F98C640192504D3009C124F /* ColorCubeDemo */ = {
 			isa = PBXGroup;
 			children = (
 				7F46E8D51925EA8D003C595F /* CCAppDelegate.h */,
 				7F46E8D41925EA8D003C595F /* CCAppDelegate.m */,
-				7F6408F31925E94000BA4A75 /* Demo */,
-				7F98C66F192504E6009C124F /* ColorCube */,
+				7F46E8D31925EA8D003C595F /* CCImageColors.h */,
+				7F46E8D21925EA8D003C595F /* CCImageColors.m */,
+				7F46E8D11925EA8D003C595F /* CCTableViewCell.h */,
+				7F46E8D01925EA8D003C595F /* CCTableViewCell.m */,
+				7F46E8CF1925EA8D003C595F /* CCViewController.h */,
+				7F46E8CE1925EA8D003C595F /* CCViewController.m */,
 				7F98C641192504D3009C124F /* Supporting Files */,
 			);
+			name = ColorCubeDemo;
 			path = ColorCube;
 			sourceTree = "<group>";
 		};
@@ -194,12 +246,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7F98C65F192504D3009C124F /* ColorCubeTests */ = {
+		7F98C65F192504D3009C124F /* ColorCubeDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				7F98C665192504D3009C124F /* ColorCubeTests.m */,
+				7F98C665192504D3009C124F /* ColorCubeDemoTests.m */,
 				7F98C660192504D3009C124F /* Supporting Files */,
 			);
+			name = ColorCubeDemoTests;
 			path = ColorCubeTests;
 			sourceTree = "<group>";
 		};
@@ -212,27 +265,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7F98C66F192504E6009C124F /* ColorCube */ = {
-			isa = PBXGroup;
-			children = (
-				7F1057441925EA59005A98D4 /* CCColorCube.h */,
-				7F1057431925EA59005A98D4 /* CCColorCube.mm */,
-				7F1057421925EA59005A98D4 /* CCLocalMaximum.h */,
-				7F1057411925EA59005A98D4 /* CCLocalMaximum.m */,
-			);
-			name = ColorCube;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6EF81DC81A6B05F600D58682 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF81DD01A6B05F600D58682 /* ColorCube.h in Headers */,
+				6EF81DEB1A6B065E00D58682 /* CCColorCube.h in Headers */,
+				6EF81DED1A6B067200D58682 /* CCLocalMaximum.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		7F98C636192504D3009C124F /* ColorCube */ = {
+		6EF81DCA1A6B05F600D58682 /* ColorCube */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F98C669192504D3009C124F /* Build configuration list for PBXNativeTarget "ColorCube" */;
+			buildConfigurationList = 6EF81DE41A6B05F700D58682 /* Build configuration list for PBXNativeTarget "ColorCube" */;
 			buildPhases = (
-				7F98C633192504D3009C124F /* Sources */,
-				7F98C634192504D3009C124F /* Frameworks */,
-				7F98C635192504D3009C124F /* Resources */,
+				6EF81DC61A6B05F600D58682 /* Sources */,
+				6EF81DC71A6B05F600D58682 /* Frameworks */,
+				6EF81DC81A6B05F600D58682 /* Headers */,
+				6EF81DC91A6B05F600D58682 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -240,26 +296,27 @@
 			);
 			name = ColorCube;
 			productName = ColorCube;
-			productReference = 7F98C637192504D3009C124F /* ColorCube.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 6EF81DCB1A6B05F600D58682 /* ColorCube.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		7F98C657192504D3009C124F /* ColorCubeTests */ = {
+		7F98C636192504D3009C124F /* ColorCubeDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F98C66C192504D3009C124F /* Build configuration list for PBXNativeTarget "ColorCubeTests" */;
+			buildConfigurationList = 7F98C669192504D3009C124F /* Build configuration list for PBXNativeTarget "ColorCubeDemo" */;
 			buildPhases = (
-				7F98C654192504D3009C124F /* Sources */,
-				7F98C655192504D3009C124F /* Frameworks */,
-				7F98C656192504D3009C124F /* Resources */,
+				7F98C633192504D3009C124F /* Sources */,
+				7F98C634192504D3009C124F /* Frameworks */,
+				7F98C635192504D3009C124F /* Resources */,
+				6EF81DE71A6B05F700D58682 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7F98C65E192504D3009C124F /* PBXTargetDependency */,
+				6EF81DE11A6B05F600D58682 /* PBXTargetDependency */,
 			);
-			name = ColorCubeTests;
-			productName = ColorCubeTests;
-			productReference = 7F98C658192504D3009C124F /* ColorCubeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = ColorCubeDemo;
+			productName = ColorCube;
+			productReference = 7F98C637192504D3009C124F /* ColorCubeDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -271,8 +328,8 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ole Krause-Sparmann";
 				TargetAttributes = {
-					7F98C657192504D3009C124F = {
-						TestTargetID = 7F98C636192504D3009C124F;
+					6EF81DCA1A6B05F600D58682 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -289,13 +346,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F98C636192504D3009C124F /* ColorCube */,
-				7F98C657192504D3009C124F /* ColorCubeTests */,
+				7F98C636192504D3009C124F /* ColorCubeDemo */,
+				6EF81DCA1A6B05F600D58682 /* ColorCube */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6EF81DC91A6B05F600D58682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F98C635192504D3009C124F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,46 +379,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F98C656192504D3009C124F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F98C664192504D3009C124F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6EF81DC61A6B05F600D58682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF81DEC1A6B066400D58682 /* CCColorCube.mm in Sources */,
+				6EF81DEE1A6B067900D58682 /* CCLocalMaximum.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F98C633192504D3009C124F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1057451925EA59005A98D4 /* CCLocalMaximum.m in Sources */,
 				7F98C647192504D3009C124F /* main.m in Sources */,
 				7F46E8D91925EA8D003C595F /* CCAppDelegate.m in Sources */,
 				7F46E8D71925EA8D003C595F /* CCTableViewCell.m in Sources */,
 				7F46E8D81925EA8D003C595F /* CCImageColors.m in Sources */,
 				7F46E8D61925EA8D003C595F /* CCViewController.m in Sources */,
-				7F1057461925EA59005A98D4 /* CCColorCube.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F98C654192504D3009C124F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F98C666192504D3009C124F /* ColorCubeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7F98C65E192504D3009C124F /* PBXTargetDependency */ = {
+		6EF81DE11A6B05F600D58682 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F98C636192504D3009C124F /* ColorCube */;
-			targetProxy = 7F98C65D192504D3009C124F /* PBXContainerItemProxy */;
+			target = 6EF81DCA1A6B05F600D58682 /* ColorCube */;
+			targetProxy = 6EF81DE01A6B05F600D58682 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,6 +433,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6EF81DE51A6B05F700D58682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ColorCube/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EF81DE61A6B05F700D58682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = ColorCube/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7F98C667192504D3009C124F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,6 +561,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorCube/ColorCube-Prefix.pch";
 				INFOPLIST_FILE = "ColorCube/ColorCube-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,54 +576,24 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorCube/ColorCube-Prefix.pch";
 				INFOPLIST_FILE = "ColorCube/ColorCube-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7F98C66D192504D3009C124F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorCube.app/ColorCube";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColorCube/ColorCube-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ColorCubeTests/ColorCubeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		7F98C66E192504D3009C124F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorCube.app/ColorCube";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColorCube/ColorCube-Prefix.pch";
-				INFOPLIST_FILE = "ColorCubeTests/ColorCubeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6EF81DE41A6B05F700D58682 /* Build configuration list for PBXNativeTarget "ColorCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EF81DE51A6B05F700D58682 /* Debug */,
+				6EF81DE61A6B05F700D58682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7F98C632192504D3009C124F /* Build configuration list for PBXProject "ColorCube" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -526,20 +603,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F98C669192504D3009C124F /* Build configuration list for PBXNativeTarget "ColorCube" */ = {
+		7F98C669192504D3009C124F /* Build configuration list for PBXNativeTarget "ColorCubeDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F98C66A192504D3009C124F /* Debug */,
 				7F98C66B192504D3009C124F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7F98C66C192504D3009C124F /* Build configuration list for PBXNativeTarget "ColorCubeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F98C66D192504D3009C124F /* Debug */,
-				7F98C66E192504D3009C124F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
